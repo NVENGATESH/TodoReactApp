@@ -1,0 +1,158 @@
+.RegiterConatiner{
+    min-height: 100vh;
+    background-image: linear-gradient(#E0EAFC,#CFDEF3);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    
+
+}
+.RegiterConatiner .Registerbox{
+    width: 440px;
+    height: 800px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    background-image: linear-gradient(135deg, #C9D6FF 0%, #E2E2E2 100%);
+  gap: 14px;
+  box-shadow: 0px 0px 120px white inset;
+  margin: 30px;
+}
+.RegiterConatiner .Registerbox .btns{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+}
+.RegiterConatiner .Registerbox .btns button{
+    width: 30%;
+    padding: 14px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    border: none;
+}
+.RegiterConatiner .Registerbox .btns button .googlis{
+font-size: 20px;
+}
+
+.Registerbox .logodiv{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    overflow: hidden;
+
+}
+.Registerbox .logodiv img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.Registerbox .loginFirstContainer{
+    width: 100%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+}
+.Registerbox .loginFirstContainer p:nth-of-type(2) {
+  text-align: center;
+  position: relative;
+  width: 100%;
+}
+.Registerbox .loginFirstContainer p:nth-of-type(2)::before {
+ 
+   content: "";
+  display: inline-block;
+  width: 35%;
+  height: 1px;
+  background-color: black;
+  margin-right: 10px;
+  vertical-align: middle;
+   
+
+
+}
+.Registerbox .loginFirstContainer p:nth-of-type(2)::after {
+  content: "";
+  display: inline-block;
+  width: 35%;
+  height: 1px;
+  background-color: black;
+  margin-left: 10px;
+   vertical-align: middle;
+
+}
+.Registerbox form{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    
+   
+
+}
+.Registerbox form .INPUTS{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+.Registerbox form input{
+width: 100%;
+padding: 20px;
+border-radius: 8px;
+border: none;
+}
+.Registerbox form input::placeholder{
+font-size: 15px;
+}
+.Registerbox form .remembermecontainer {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center; /* ✅ vertical alignment */
+}
+
+.Registerbox form .rememberme {
+  display: flex;
+  align-items: center;
+  gap: 8px; /* ✅ spacing between checkbox and label */
+}
+
+.Registerbox form .rememberme input {
+  width: 20px;
+  height: 20px;
+}
+.Registerbox form .lines{
+    width: 100%;
+    position: relative;
+}
+.Registerbox form .lines::before{
+    width: 100%;
+    content: "";
+    height: 0.5px;
+    display: inline-block;
+    background-color: black;
+     vertical-align: middle;
+}
+.Registerbox form button{
+    width: 80%;
+    padding: 13px;
+    border: none;
+    text-align: center;
+    margin: auto;
+    border-radius: 8px;
+    background: #020024;
+    color: white;
+    font-size: 20px;
+background: linear-gradient(143deg,rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 48%, rgba(7, 55, 152, 1) 41%, rgba(0, 212, 255, 1) 100%);
+}

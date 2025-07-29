@@ -1,0 +1,231 @@
+.dashboardcontainer {
+  min-height: 100vh;
+background-image: linear-gradient(#1c92d2,#f2fcfe);
+  text-align: center;
+  padding: 20px;
+  position: relative;
+  
+}
+.dashboardcontainer h2:nth-child(1){
+  color: white;
+}
+
+.dashboardcontainer .userinfodashboard{
+  width: 100%;
+  padding: 10px;
+ 
+}
+.dashboardcontainer .userinfodashboard .userandtimeconatiner{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+.dashboardcontainer .userinfodashboard .userandtimeconatiner p{
+  font-size: 20px;
+  color: white;
+}
+.userandtimeconatiner .createsybol{
+  width: 20%;
+  text-align: center;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  font-size: 35px;
+
+ 
+   
+}
+.userandtimeconatiner .createsybol .plusicon{
+
+  color: blue;
+
+}
+.userandtimeconatiner .createsybol .createbtnss{
+  
+  
+  margin: 0px;
+   color: black;
+ 
+  
+
+  
+}
+
+
+
+
+
+/* create todo start */
+
+.dashboardcontainer .createtodolist{
+  width: 400px;
+  height: 300px;
+  background-color: white;
+  border-radius: 8px;
+  margin: auto;
+  position: absolute;
+  left: 35%;
+  top: -350px;
+  transition: top 0.3s ease;
+
+}
+.dashboardcontainer .createtodolist form{
+  width: 100%;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  
+}
+.dashboardcontainer .createtodolist form .cancelicon{
+  position: absolute;
+  right: 25px;
+}
+.dashboardcontainer .createtodolist form .cancelicon .cancelicon1 {
+ 
+font-size: 25px;
+}
+
+.dashboardcontainer .createtodolist form input,.dashboardcontainer .createtodolist form textarea{
+  width: 100%;
+  padding: 13px;
+  border: 2px solid black;
+  border-radius: 8px;
+}
+.dashboardcontainer .createtodolist form button{
+  width: 40%;
+  margin: auto;
+  padding: 15px;
+  border-radius: 13px;
+  z-index: 99;
+  background-color: blue;
+  border: none;
+}
+/* create todo start  end*/
+
+
+
+/* list if todo */
+
+
+
+.dashboardcontainer .tododeatilsconatiner{
+  width: 45%;
+  margin: auto;
+  border-radius: 13px;
+  background-color: aliceblue;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  /* justify-content: center; */
+  /* align-items: center; */
+
+}
+.dashboardcontainer .tododeatilsconatiner .eachtodo{
+  width: 100%;
+  padding: 14px;
+  /* background-color: rgb(83, 8, 211); */
+  display: flex;
+ justify-content: space-between;
+ align-items: center;
+ /* background-color: gray; */
+ margin:20px 0px;
+
+ border-radius: 13px;
+ border: none;
+
+}
+.dashboardcontainer .tododeatilsconatiner .eachtodo input{
+  width: 30px;
+  height: 30px;
+}
+.dashboardcontainer .tododeatilsconatiner .eachtodo.even {
+   background-color: #f7f9fc;
+  color: #333333;
+  border: 1px solid #d1d5db;
+}
+
+.dashboardcontainer .tododeatilsconatiner .eachtodo.odd {
+    background-color: #e6f0ff;
+  color: #333333;
+  border: 1px solid #d1d5db;
+}
+
+.dashboardcontainer .tododeatilsconatiner .eachtodo:hover {
+  background-color: #e6f0ff;
+  transition: background-color 0.3s ease;
+}
+.dashboardcontainer .tododeatilsconatiner .eachtodo .todobtnsinside{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+.dashboardcontainer .tododeatilsconatiner .eachtodo .todobtnsinside button{
+  width: 60%;
+  padding: 13px;
+  border: none;
+    text-decoration: none;
+    background-color: rgb(72, 72, 164);
+border-radius: 13px;
+font-size: 17px; 
+color: white;
+}
+.dashboardcontainer .tododeatilsconatiner .eachtodo .todobtnsinside .creaetebtn{
+
+    
+     background: #EEAECA;
+     color: white;
+background: radial-gradient(circle,rgba(238, 174, 202, 1) 0%, rgba(181, 182, 222, 1) 63%, rgba(148, 187, 233, 1) 77%);
+
+}
+.dashboardcontainer .tododeatilsconatiner .eachtodo .todobtnsinside .linkbtn{
+     text-decoration: none;
+     color: white;
+     
+   
+    
+}
+
+
+
+
+.confirm-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.4);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.confirm-box {
+  background-color: #fff;
+  padding: 20px 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+
+.confirm-buttons button {
+  margin: 0 10px;
+  padding: 8px 16px;
+  border: none;
+  background-color: #3b82f6;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.confirm-buttons button:last-child {
+  background-color: gray;
+}
